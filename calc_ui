@@ -14,7 +14,7 @@ end () {
 while true
 do
 	$DIALOG --inputbox "Чего посчитать?" 8 35 2> $FILE1 || end
-	if cat $FILE1 | ./calc > $FILE2 2>$ERROR
+	if cat $FILE1 | nc localhost 1234 > $FILE2 2>$ERROR
 	then
 		MSG="Итого: `cat $FILE2`\n\nПродолжаем?"
 		$DIALOG --yesno "$MSG" 7 20 || end
