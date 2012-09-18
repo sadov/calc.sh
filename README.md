@@ -14,3 +14,5 @@ Example_3 -- text UI.
 Example_4 -- GUI.
 
 Example_5 -- Network server.
+
+Example_6 -- GUI for networked calc.
